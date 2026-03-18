@@ -1,0 +1,55 @@
+{
+  "ingest_example_1": {
+    "patient_id": "P001",
+    "clinic_id": "C001",
+    "source": "clinic_emr",
+    "medications": [
+      {
+        "name": "Lisinopril",
+        "dose": "10 mg",
+        "status": "active"
+      },
+      {
+        "name": "Warfarin",
+        "dose": "5 mg",
+        "status": "active"
+      }
+    ]
+  },
+
+  "ingest_example_2_conflict": {
+    "patient_id": "P001",
+    "clinic_id": "C001",
+    "source": "hospital_discharge",
+    "medications": [
+      {
+        "name": "Lisinopril",
+        "dose": "20 mg",
+        "status": "active"
+      },
+      {
+        "name": "Warfarin",
+        "dose": "5 mg",
+        "status": "stopped"
+      }
+    ]
+  },
+
+  "ingest_example_3_new_patient": {
+    "patient_id": "P002",
+    "clinic_id": "C002",
+    "source": "patient_reported",
+    "medications": [
+      {
+        "name": "Losartan",
+        "dose": "50 mg",
+        "status": "active"
+      },
+      {
+        "name": "Apixaban",
+        "dose": "5 mg",
+        "status": "active"
+      }
+    ]
+  }
+}
